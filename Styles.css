@@ -85,74 +85,13 @@ header {
 }
 
 /* Main */
-.grid__container .contenido{
-    grid-column: span 2;
-}
-main{
+section{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     font-family: 'Anton', sans-serif;
-}
-.contenedor__principal{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-.container__cover{
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -20px;
-}
-.container__cover--info{
-    width: 50%;
-    height: 100%;
-    background-image: url(../img/Sin\ título-2.png);
-    background-size: cover;
-    background-position: 10px 30px;
-}
-.container__cover--info h1{
-    color:#111 ;
-    font-size: 50px;
-    margin-bottom: -20px;
-}
-.container__cover--info h2{
-    font-size: 50px;
-    font-weight: 800;
-    color: rgb(124, 1, 124);
-    text-transform: uppercase;
-}
-.container__cover--info p{
-    font-size: 17px;
-}
-.container__cover input[type="button"] 
-{
-    padding: 10px 40px;
-    margin-top: 40px;
-    font-size: 18px;
-    font-weight: 600;
-    border: none;
-    color: #e6a90f;
-    border-radius: 40px;
-    border: solid #e6a90f;
-    background-color: rgb(124, 1, 124);
-    box-shadow: 1px 1px 30px -5px rgb(124 1 124);
-    cursor: pointer;
-    transition: box-shadow 500ms;
-}
-
-.container__cover input[type="button"]:hover{
-    box-shadow: 1px 1px 30px -5px #e6a90f ;
-}
-
-.grid__container footer{
-    grid-column: span 2;
+    color: #000;
+    word-spacing: 0.2rem;
 }
 /* Footer */
 footer{
