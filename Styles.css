@@ -69,16 +69,28 @@ header {
 }
 .navbar-nav a{
     color: #f4d68c;
+    margin: 0 15px;
 }
 .navbar-nav .nav-link.active{
     color: #f4d68c;
 }
-.nav-link.active {
+.navbar-nav .nav-link.active{
     border: solid #f4d68c;
-    border-radius: 50px;
-    padding: 5px;
+    border-radius: 30px;
+    padding: 5px 20px;
     color: #f4d68c;
     background-color: rgb(124, 1, 124);
+    box-shadow:1px 1px 30px -5px #f4d68c;
+    transition: box-shadow 500ms;
+}
+.navbar-nav .nav-link.active:hover{
+    border: solid #f4d68c;
+    border-radius: 30px;
+    padding: 5px 20px;
+    color: #f4d68c;
+    background-color: rgb(124, 1, 124);
+    box-shadow:1px 1px 30px -5px rgb(124, 1, 124);
+
 }
 .navbar-brand img{
     height: 100px;
@@ -92,6 +104,29 @@ section{
     font-family: 'Anton', sans-serif;
     color: #000;
     word-spacing: 0.2rem;
+}
+input[type="button"] 
+{
+    padding: 10px 40px;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    color: #f4d68c;
+    border-radius: 40px;
+    border: solid #f4d68c;
+    background-color: rgb(124, 1, 124);
+    box-shadow: 1px 1px 30px -5px rgb(124 1 124);
+    cursor: pointer;
+    transition: box-shadow 500ms;
+}
+
+input[type="button"]:hover{
+    box-shadow: 1px 1px 30px -5px #f4d68c ;
+}
+.display-2--boton{
+    display: block;
+    margin-top: -10px;
 }
 /* Footer */
 footer{
@@ -107,38 +142,16 @@ footer{
     text-decoration: none;
     margin-top: 20px;
 }
-.social__icon, 
-.footer__menu{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-}
-.social__icon li, 
-.footer__menu li{
-    list-style: none;
-}
-.social__icon li a{
+.nav-item a{
     font-size: 25px;
     margin: 0 10px;
     color: #e6a90f;
     display: inline-block;
     transition: 0.5s;
+    text-decoration: none;
 }
-.social__icon li a:hover{
+.nav-item a:hover{
     transform: translateY(-10px);
-    color: #ffd104;
-}
-.footer__menu li a{
-    font-size: 20px;
-    margin: 0 10px;
-    color: #e6a90f;
-    display: inline-block;
-    transition: 0.5s;
-}
-.footer__menu li a:hover{
-    transform:translateY(-5px);
     color: #ffd104;
 }
 footer p{
