@@ -4,70 +4,103 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact</title>
+        <title>Works</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="/Styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     </head>
 <body>
-    <div class="grid__container--works">
-        <header>
-            <div class="container__header">
-                <div class="logo">
-                    <img src="/img/Logo-f.png" alt="Logo">
-                </div>
-                <div class="container__nav">
-                    <nav>
-                        <ul>
-                            <li> <a href="../index.html" class="boton">HOME</a></li>
-                            <li><a href="/html/About-me.html">ABOUT ME</a></li>
-                            <li><a href="/html/contact.html">CONTACT </a></li>
-                            <li><a href="#">WORKS</a></li>
-                        </ul>
-                    </nav>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="../img/Logo-f.png" alt="logo-image"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-center">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    <a class="nav-link" href="../html/About-Me.html">About Me</a>
+                    <a class="nav-link" href="../html/Works.html">Portfolio</a>
+                    <a class="nav-link" href="../html/Contact.html">Contact</a>
+                    </div>
                 </div>
             </div>
-        </header>
+        </nav>
+    </header>
 <!-- Main -->
-        <section class="grid__container--works">
-            <h2>My Works</h2>
-            <div class="card-container">
+<section>
+    <h2>
+        My Works
+    </h2>
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="card">
-                    <img src="" alt="">
-                    <h4>Warriorsa</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium reiciendis, voluptas molestiae quidem quia recusandae perspiciatis obcaecati, est explicabo sit.</p>
-                    <a href="#">leer mas</a>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <h4>Ian Acosta</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium reiciendis, voluptas molestiae quidem quia recusandae perspiciatis obcaecati, est explicabo sit.</p>
-                    <a href="#">leer mas</a>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <h4>Fede Soria</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium reiciendis, voluptas molestiae quidem quia recusandae perspiciatis obcaecati, est explicabo sit.</p>
-                    <a href="#">leer mas</a>
+                    <img src="../img/imgex.png" alt="Foto-ej" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Warriors</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit corrupti quibusdam, repellendus magni distinctio dolore rem voluptate mollitia totam placeat? Dolore repellendus ut ducimus reprehenderit aut nam dolorum assumenda. Asperiores.</p>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="../img/imgex.png" alt="Foto-ej" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Warriors</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit corrupti quibusdam, repellendus magni distinctio dolore rem voluptate mollitia totam placeat? Dolore repellendus ut ducimus reprehenderit aut nam dolorum assumenda. Asperiores.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="../img/imgex.png" alt="Foto-ej" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Warriors</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit corrupti quibusdam, repellendus magni distinctio dolore rem voluptate mollitia totam placeat? Dolore repellendus ut ducimus reprehenderit aut nam dolorum assumenda. Asperiores.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
         <footer>
-            <ul class="social__icon">
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-            </ul>
-            <ul class="footer__menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Works</a></li>
-            </ul>
-            <!-- <hr> -->
-            <p> © 2022 Federico Del Valle| All Rights Reserved </p>
+            <div class="container">
+                <div class="nav justify-content-center mt-5 pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                </div>
+                <div class="nav justify-content-center pb-3 mb-3">
+                        <li class="nav-item">
+                            <a href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">Works</a>
+                        </li>
+                        
+                </div>
+                <div class="nav justify-content-center pb-3 mb-3">
+                    <p> © 2022 Federico Del Valle| All Rights Reserved </p>
+                </div>
+            </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>

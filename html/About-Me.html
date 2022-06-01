@@ -4,57 +4,85 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact</title>
+        <title>About Me</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="/Styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     </head>
 <body>
-    <div class="grid__container--about">
-        <header>
-            <div class="container__header">
-                <div class="logo">
-                    <img src="/img/Logo-f.png" alt="Logo">
-                </div>
-                <div class="container__nav">
-                    <nav>
-                        <ul>
-                            <li> <a href="../index.html" class="boton">HOME</a></li>
-                            <li><a href="/html/aboutme.html">ABOUT ME</a></li>
-                            <li><a href="/html/contact.html">CONTACT </a></li>
-                            <li><a href="../html/Works.html">WORKS</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-<!-- Main -->
-        <section class="about">
-            <h2>About Me</h2>
-            <div class="about__container">
-                    <img src="../img/WhatsApp Image 2022-05-17 at 7.30.09 PM.jpeg" alt="imagen-fede">
-                    <div class="about__container--info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita, nobis nisi consequatur, inventore itaque quos vero nihil distinctio libero repellendus sapiente necessitatibus recusandae perspiciatis dolorem aperiam quaerat ab cum.</p>
-                        <a href=""><input type="button" value="Read More"></a>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="../img/Logo-f.png" alt="logo-image"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-center">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    <a class="nav-link" href="../html/About-Me.html">About Me</a>
+                    <a class="nav-link" href="../html/Works.html">Portfolio</a>
+                    <a class="nav-link" href="../html/Contact.html">Contact</a>
                     </div>
+                </div>
             </div>
-        </section>
-        <footer>
-            <ul class="social__icon">
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-            </ul>
-            <ul class="footer__menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Works</a></li>
-            </ul>
-            <!-- <hr> -->
-            <p> © 2022 Federico Del Valle| All Rights Reserved </p>
-        </footer>
+        </nav>
+    </header>
+<!-- Main -->
+        <section id="home" class="intro-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 intros text-center">
+                <img src="../img/WhatsApp Image 2022-05-17 at 7.30.09 PM.jpeg" alt="" class="about-me-img">
+            </div>
+            <div class="col-md-6 intros">
+                <h1 class="display-2">
+                    <span class="display-2--intro">Hi Again!</span>
+                </h1>
+                    <span class="display-2--description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati asperiores architecto assumenda? Ratione quaerat ut voluptatem eveniet eos molestias ab, aperiam, nesciunt, placeat odit deserunt delectus quo? Commodi, dicta sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eaque illo, culpa ex vero vitae dignissimos explicabo earum id repellendus, velit adipisci. Pariatur cupiditate dicta dignissimos vero doloribus alias explicabo?
+                    </span>
+                    <span class="display-2--boton">
+                            <a href=""><input type="button" value="Start"></a>
+                    </span>
+            </div>
+        </div>
     </div>
+</section>
+        <footer>
+            <div class="container">
+                <div class="nav justify-content-center mt-5 pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                </div>
+                <div class="nav justify-content-center pb-3 mb-3">
+                        <li class="nav-item">
+                            <a href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">Works</a>
+                        </li>
+                        
+                </div>
+                <div class="nav justify-content-center pb-3 mb-3">
+                    <p> © 2022 Federico Del Valle| All Rights Reserved </p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>
