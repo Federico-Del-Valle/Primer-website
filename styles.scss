@@ -1,0 +1,388 @@
+$color_1: #f4d68c;
+$color_2: #000;
+$color_3: rgb(124 1 124);
+$color_4: rgb(65, 3, 73);
+$color_5: #fff;
+$color_7: #F6E6BC;
+$font-family_1: 'Anton', sans-serif;
+$font-family_2: 'Courier New', Courier, monospace;
+$background-color_1: white;
+$background-color_2: rgb(124, 1, 124);
+
+/* Animacion Pantalla de carga */
+@keyframes anim {
+	to {
+		margin-top: -100px;
+	}
+}
+@keyframes anim2 {
+	to {
+		transform: translateY(-100%);
+	}
+}
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+.loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 100vh;
+	background-color: $background-color_1;
+	animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 4.5s both;
+}
+.wrapperload {
+	width: 500px;
+	height: 100px;
+	overflow: hidden;
+}
+.wrappertext {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		width: 70%;
+	}
+	&:nth-child(1) {
+		animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
+	}
+	&:nth-child(2) {
+		animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 2s both;
+	}
+	&:nth-child(3) {
+		animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 3s both;
+	}
+}
+// Pagina Principal
+body {
+	background: linear-gradient(to top, #f4d68c, rgb(124, 1, 124) );
+	background-size: cover;
+}
+.navbar-nav {
+	padding: 0 0.7rem;
+	a {
+		color: $color_1;
+		margin: 0 15px;
+	}
+	.nav-link.active {
+		color: $color_1;
+		border: solid #f4d68c;
+		border-radius: 30px;
+		padding: 5px 20px;
+		color: $color_1;
+		background-color: $background-color_2;
+		box-shadow: 1px 1px 30px -5px #f4d68c;
+		transition: box-shadow 500ms;
+		&:hover {
+			border: solid #f4d68c;
+			border-radius: 30px;
+			padding: 5px 20px;
+			color: $color_1;
+			background-color: $background-color_2;
+			box-shadow: 1px 1px 30px -5px rgb(124, 1, 124);
+		}
+	}
+}
+.navbar-brand {
+	img {
+		height: 100px;
+	}
+}
+section {
+	margin-top: 100px;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	font-family: $font-family_1;
+	color: $color_2;
+	word-spacing: 0.2rem;
+}
+input[type="button"] {
+	padding: 10px 40px;
+	margin-top: 40px;
+	font-size: 18px;
+	font-weight: 600;
+	border: none;
+	color: $color_1;
+	border-radius: 40px;
+	border: solid #f4d68c;
+	background-color: $background-color_2;
+	box-shadow: 1px 1px 30px -5px rgb(124 1 124);
+	cursor: pointer;
+	transition: box-shadow 500ms;
+	&:hover {
+		box-shadow: 1px 1px 30px -5px #f4d68c;
+	}
+}
+.display-2--boton {
+	display: block;
+	margin-top: -10px;
+}
+footer {
+	font-family: $font-family_2;
+	position: relative;
+	width: 100%;
+	min-height: 50px;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-decoration: none;
+	margin-top: 20px;
+	p {
+		color: $color_3;
+		text-align: center;
+		margin-top: 15px;
+		margin-bottom: 5px;
+		font-size: 16px;
+	}
+}
+.nav-item {
+	a {
+		font-size: 20px;
+		margin: 0 10px;
+		color: $color_3;
+		display: inline-block;
+		transition: 0.5s;
+		text-decoration: none;
+		&:hover {
+			transform: translateY(-10px);
+			color: $color_4;
+		}
+	}
+}
+// Pagina Contacto
+.section__contact {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	min-height: 100vh;
+	padding: 20px;
+	width: 100%;
+	margin: auto;
+	margin-top: 150px;
+	background-color: $background-color_2;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 400px;
+		height: 400px;
+		background-image: url(../img/Sin\ título-2.png);
+		border-radius: 50%;
+		transform: translate(-350px,-180px);
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		width: 400px;
+		height: 400px;
+		background: url(img/png-orange-transparent.png);
+		background-position: 20px 5px;
+		border-radius: 50%;
+		transform: translate(420px,80px);
+	}
+}
+.container__form {
+	margin: auto;
+	position: relative;
+	z-index: 999;
+	width: 90%;
+	max-width: 100%;
+	padding: 50px;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 25 45px rgba(0, 0, 0, 0.1);
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
+	backdrop-filter: blur(25px);
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(255, 255, 255, 0.05);
+		pointer-events: none;
+		transform: skewX(-15deg);
+	}
+	h2 {
+		width: 100%;
+		text-align: center;
+		color: $color_5;
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+	.row100 {
+		position: relative;
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit,min(250px,1fr));
+		.col {
+			position: relative;
+			width: 100%;
+			padding: 0 10px;
+			margin: 30px 0 20px;
+			.inputbox {
+				position: relative;
+				width: 100%;
+				height: 40px;
+				color: $color_5;
+				input {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					background: transparent;
+					box-shadow: none;
+					border: none;
+					outline: none;
+					padding: 0 10px;
+					z-index: 1;
+					color: $color_2;
+					resize: none;
+					&:focus {
+						+ {
+							.text {
+								top: -35px;
+								left: -10px;
+							}
+						}
+						~ {
+							.line {
+								height: 100%;
+							}
+						}
+					}
+					&:valid {
+						+ {
+							.text {
+								top: -35px;
+								left: -10px;
+							}
+						}
+						~ {
+							.line {
+								height: 100%;
+							}
+						}
+					}
+				}
+				textarea {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					background: transparent;
+					box-shadow: none;
+					border: none;
+					outline: none;
+					padding: 0 10px;
+					z-index: 1;
+					color: $color_2;
+					resize: none;
+					&:focus {
+						+ {
+							.text {
+								top: -35px;
+								left: -10px;
+							}
+						}
+						~ {
+							.line {
+								height: 100%;
+							}
+						}
+					}
+					&:valid {
+						+ {
+							.text {
+								top: -35px;
+								left: -10px;
+							}
+						}
+						~ {
+							.line {
+								height: 100%;
+							}
+						}
+					}
+				}
+				.text {
+					position: absolute;
+					top: 0;
+					left: 0;
+					line-height: 40px;
+					font-size: 20px;
+					padding: 0 10px;
+					display: block;
+					transition: 0.5s;
+					pointer-events: none;
+				}
+				.line {
+					position: absolute;
+					bottom: 0;
+					display: block;
+					width: 100%;
+					height: 2px;
+					background: #fff;
+					transition: 0.5s;
+					border-radius: 2px;
+					pointer-events: none;
+				}
+			}
+			input[type="submit"] {
+				border: none;
+				padding: 15px 40px;
+				font-size: 15px;
+				outline: none;
+				background: #F6E6BC;
+				color: $color_3;
+				font-weight: 600;
+				border-radius: 20px;
+				cursor: pointer;
+			}
+			.inputbox.textarea {
+				position: relative;
+				width: 100%;
+				height: 100px;
+				padding: 10px 0;
+			}
+		}
+	}
+}
+// Pagina Works
+h2 {
+	text-align: center;
+	color: $color_7;
+}
+.card {
+	box-shadow: o 2px 2px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	transition: all 0.25s;
+	&:hover {
+		transform: translateY(-15px);
+		box-shadow: 0 12px 16px rgba(0, 0, 0, 10);
+	}
+}
+// Pagina About 
+h1 {
+	color: $color_7;
+}
+.about-me-img {
+	width: 400px;
+	border-radius: 30px;
+}
+.progress-bar {
+	background-color: $background-color_2;
+}
