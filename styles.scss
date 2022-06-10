@@ -1,15 +1,57 @@
 $color_1: #f4d68c;
 $color_2: #000;
-$color_3: rgb(124 1 124);
-$color_4: rgb(65, 3, 73);
+$color_3: #7C017C;
+$color_4: #410349;
 $color_5: #fff;
-$color_7: #F6E6BC;
+$color_6: #F6E6BC;
 $font-family_1: 'Anton', sans-serif;
 $font-family_2: 'Courier New', Courier, monospace;
 $background-color_1: white;
-$background-color_2: rgb(124, 1, 124);
+$background-color_2: #7C017C;
+
+// Paleta de colores
+
+$colors: (
+	"color_1": $color_1,
+	"color_2": $color_2,
+	"color_3": $color_3,
+	"color_4": $color_4,
+	"color_5": $color_5,
+	"color_6": $color_6
+);
+// Mixins
+
+@mixin boton {
+		padding: 10px 40px;
+		margin-top: 40px;
+		font-size: 18px;
+		font-weight: 600;
+		border: none;
+		color: $color_1;
+		border-radius: 40px;
+		border: solid #f4d68c;
+		background-color: $background-color_2;
+		box-shadow: 1px 1px 30px -5px rgb(124 1 124);
+		cursor: pointer;
+		transition: box-shadow 500ms;
+		&:hover {
+			box-shadow: 1px 1px 30px -5px #f4d68c;
+	}
+}
+@mixin tarjeta ($fondo) {
+	box-shadow: o 2px 2px rgba(0, 0, 0, 0.2);
+	background-color: $fondo;
+	text-align: center;
+	transition: all 0.25s;
+	&:hover {
+		transform: translateY(-15px);
+		box-shadow: 0 12px 16px rgba(0, 0, 0, 10);
+	}
+	
+}
 
 /* Animacion Pantalla de carga */
+
 @keyframes anim {
 	to {
 		margin-top: -100px;
@@ -108,21 +150,7 @@ section {
 	word-spacing: 0.2rem;
 }
 input[type="button"] {
-	padding: 10px 40px;
-	margin-top: 40px;
-	font-size: 18px;
-	font-weight: 600;
-	border: none;
-	color: $color_1;
-	border-radius: 40px;
-	border: solid #f4d68c;
-	background-color: $background-color_2;
-	box-shadow: 1px 1px 30px -5px rgb(124 1 124);
-	cursor: pointer;
-	transition: box-shadow 500ms;
-	&:hover {
-		box-shadow: 1px 1px 30px -5px #f4d68c;
-	}
+@include boton()
 }
 .display-2--boton {
 	display: block;
@@ -342,6 +370,7 @@ footer {
 				}
 			}
 			input[type="submit"] {
+				@extend .display-2--boton;
 				border: none;
 				padding: 15px 40px;
 				font-size: 15px;
@@ -363,21 +392,21 @@ footer {
 }
 // Pagina Works
 h2 {
-	text-align: center;
-	color: $color_7;
+	color: map-get($colors, color_6 );
 }
-.card {
-	box-shadow: o 2px 2px rgba(0, 0, 0, 0.2);
-	text-align: center;
-	transition: all 0.25s;
-	&:hover {
-		transform: translateY(-15px);
-		box-shadow: 0 12px 16px rgba(0, 0, 0, 10);
-	}
+
+.card-1 {
+	@include tarjeta(#fff)
+}
+.card-2 {
+	@include tarjeta(#777)
+}
+.card-3 {
+	@include tarjeta(#999)
 }
 // Pagina About 
 h1 {
-	color: $color_7;
+	color: map-get($colors , color_1);
 }
 .about-me-img {
 	width: 400px;
